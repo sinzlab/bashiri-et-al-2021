@@ -1,0 +1,19 @@
+version: "2.3"
+services:
+  
+  jupyterlab:
+    build:
+      context: .
+      dockerfile: $PWD/Dockerfile
+    image: neuraldistributions
+    volumes:
+        - .:/project
+    env_file:
+        - .env
+    environment:
+        - NVIDIA_VISIBLE_DEVICES=0
+    runtime: nvidia
+    entrypoint:
+        - jupyter
+        - lab
+        - --allow-root
