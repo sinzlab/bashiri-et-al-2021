@@ -1,0 +1,29 @@
+BootStrap: shub
+From: sinzlab/pytorch-singularity:v3.8-torch1.7.0-dj0.12.7
+
+%files
+    brain_state
+    setup.py
+    data /notebooks/data
+    ./lib/nnsysident /src/nnsysident
+    ./lib/neuralmetrics /src/neuralmetrics
+    ./lib/neuralpredictors /src/neuralpredictors
+
+%post
+    # Install essential Ubuntu packages
+    # and upgrade pip
+    python -m pip install --upgrade pip    
+
+    python -m pip install nnfabrik==0.1.0
+    python -m pip install -e /src/nnsysident
+    python -m pip install -e /src/neuralmetrics
+    python -m pip install -e /src/neuralpredictors
+
+    # install current project
+    python -m pip install -e .
+
+%startscript
+    exec "$@"
+
+%runscript
+    exec "$@"
