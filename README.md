@@ -12,11 +12,11 @@ Here we provide the code used to train and evaluate models presented in the pape
 ## Intructions to run the code
 
 1. Clone the repository: `git clone https://github.com/sinzlab/bashiri-et-al-2021.git`
-2. Using the shell of your choice, navigate to the project directory: `cd bashiri-et-al-2021`
+2. Navigate to the project directory: `cd bashiri-et-al-2021`
 3. Run the following command inside the directory
 
     ```bash
-    docker-compose run -d -p 10101:8888 notebook
+    docker-compose run -d -p 10101:8888 jupyterlab
     ```
     This command will create a docker image followed by a docker container from that image in which we can run the code. 
 
