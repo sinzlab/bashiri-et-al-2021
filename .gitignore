@@ -150,7 +150,6 @@ data/
 *.vscode
 *.sif
 *.png
-*.jpg
 logs
 *.err
 *.out
