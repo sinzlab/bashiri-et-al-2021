@@ -22,6 +22,6 @@ Here we provide the code used to train and evaluate models presented in the pape
     ```bash
     docker-compose run -d -p 10101:8888 jupyterlab
     ```
-    This command will create a docker image followed by a docker container from that image in which we can run the code. 
+    This will create a docker image followed by a docker container from that image in which we can run the code. 
 
 3. You can now open the [jupyter lab evironment](https://jupyterlab.readthedocs.io/en/stable/#) in your browser via `localhost:10101`
