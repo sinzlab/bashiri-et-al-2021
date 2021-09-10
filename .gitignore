@@ -149,7 +149,6 @@ data/
 *.csv
 *.vscode
 *.sif
-*.png
 logs
 *.err
 *.out
