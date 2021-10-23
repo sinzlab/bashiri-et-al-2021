@@ -1,5 +1,12 @@
 # A Flow-based latent state generative model of neural population responses to natural images
-Code for "A Flow-based latent state generative model of neural population responses to natural images" - [link to preprint](https://www.biorxiv.org/content/10.1101/2021.09.09.459570v1).
+
+![Generic badge](https://img.shields.io/badge/NeurIPS_2021-accepted_(spotlight)-A000D1.svg)
+[![Generic badge](https://img.shields.io/badge/watch_the-teaser-BA861C.svg)](https://youtu.be/pBkFgDrsDrc)
+[![Generic badge](https://img.shields.io/badge/watch_the-talk-02B726.svg)](https://youtu.be/pPLN9Y5sq0Y)
+[![Generic badge](https://img.shields.io/badge/read_the-preprint-C92100.svg)](https://www.biorxiv.org/content/10.1101/2021.09.09.459570v1)
+
+
+Code for "A Flow-based latent state generative model of neural population responses to natural images".
 
 <p align="center">
   <img src="figures/Fig1.png" />
