@@ -9,7 +9,7 @@
 Code for "A Flow-based latent state generative model of neural population responses to natural images".
 
 <p align="center">
-  <img src="figures/Fig1.png" />
+  <img src="figures/Fig1-cr.png" />
 </p>
 
 Here we provide the code used to train and evaluate models presented in the paper, along with three example notebooks in the `notebooks` directory to faciliate code usage:
