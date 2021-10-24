@@ -20,7 +20,7 @@ Here we provide the code used to train and evaluate models presented in the pape
 ## Requirements
 - `docker` and `docker-compose`.
 
-## Intructions to run the code
+## Instructions to run the code
 
 1. Clone the repository: `git clone https://github.com/sinzlab/bashiri-et-al-2021.git`
 2. Navigate to the project directory: `cd bashiri-et-al-2021`
