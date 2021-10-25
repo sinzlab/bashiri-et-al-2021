@@ -16,7 +16,9 @@ RUN python -m pip --no-cache-dir install \
     jupyterlab>=2 \
     xeus-python \
     nb_black \
-    ipdb
+    ipdb \
+    'streamlit==0.81.1' \
+    stqdm
 
 WORKDIR /project
 RUN mkdir /project/neuraldistributions

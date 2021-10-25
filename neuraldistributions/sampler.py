@@ -108,7 +108,8 @@ def generate_one_sample(model, image_path, verbose=False):
 
 def generate_n_samples(model, image_path, n_samples=1, random_seed=42, verbose=False):
     # fix random seed
-    torch.manual_seed(random_seed)
+    if random_seed is not None:
+        torch.manual_seed(random_seed)
 
     samples = []
     for _ in tqdm(range(n_samples)):

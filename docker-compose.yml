@@ -17,3 +17,19 @@ services:
         - jupyter
         - lab
         - --allow-root
+
+  simulator:
+    build:
+      context: .
+      dockerfile: $PWD/Dockerfile
+    image: neuraldistributions
+    volumes:
+      - .:/project
+    # env_file:
+    #   - .env
+    ports:
+      - "10139:8501" 
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0
+    runtime: nvidia
+    entrypoint: ["streamlit", "run", "uis/simulator.py", "&"]
