@@ -131,7 +131,7 @@ def generate_one_sample(
         np.random.choice(np.arange(len(sample)))
     ]
     neural_sample = (
-        model.sample_transform(torch.from_numpy(gaussian_sample).to(device))[0]
+        model.sample_transform.inv(torch.from_numpy(gaussian_sample).to(device))
         .cpu()
         .data.numpy()
     )
