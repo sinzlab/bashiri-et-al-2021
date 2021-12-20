@@ -143,7 +143,6 @@ data/
 *.env
 *.pt
 *.pickle
-*.npy
 *.gif
 *.egg
 *.csv
